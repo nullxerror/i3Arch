@@ -8,4 +8,5 @@ ExecStart=/usr/bin/sandfox --verbose --profile=firefox --user=YOURUSERNAME
 ExecStop=/usr/bin/sandfox --closeall
 
 [Install]
+
 WantedBy=multi-user.target
