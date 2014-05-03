@@ -1,0 +1,13 @@
+[Unit]
+Description=STARTiNG Tor in CHROOT!!!
+After=network.target
+
+[Service]
+User=root
+Type=simple
+ExecStart=/usr/bin/sh -c "chroot --userspec=tor:tor /opt/torchroot /usr/bin/tor -f /etc/tor/torrc"
+KillSignal=SIGINT
+LimitNOFILE=8192
+
+[Install]
+WantedBy=multi-user.target
