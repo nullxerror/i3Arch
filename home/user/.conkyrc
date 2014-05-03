@@ -1,0 +1,8 @@
+out_to_x no
+out_to_console yes
+update_interval 1.0
+total_run_times 0
+use_spacer none
+TEXT
+ 
+CPU: ${cpu cpu0}%|NET: Down-${downspeed enp2s0} Up-${upspeed enp2s0}|RAM: $memperc% - $mem/$memmax|ROOT: ${fs_used /}/${fs_size /}|HOME: ${fs_used /home}/${fs_size /home}|TMP: ${fs_used /tmp}/${fs_size /tmp}|${time  %a %d %b %y - %R}
